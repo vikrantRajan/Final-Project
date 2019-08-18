@@ -1,0 +1,113 @@
+.page { 
+    font-family: 'Ubuntu', sans-serif;
+
+    max-width: 100%; 
+    padding: 50px;
+}
+button {
+    display: block;
+    color: white;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px 0 0 0;
+    background: black;
+    padding: 20px 40px;
+    transition: all 0.4s ease-in;
+}
+button:hover {
+    background: blue;
+}
+#captionSpan {
+   
+    border: white 5px solid;
+    
+}
+.error {
+    background: red;
+    padding: 20px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all 0.4s ease-in;
+}
+input:focus {
+    border-bottom: 10px solid black;
+}
+.title { 
+    background-color: hsl(0, 0%, 88%); 
+    padding: 20px 0;
+    text-align: center; 
+}
+.container { 
+    display: block; 
+}
+.navagation { 
+    width: 260px; 
+}
+.userInterface { 
+    flex-grow: 1; 
+}
+.subKeyInput {
+    width: 240px;
+}
+
+.wrapper { 
+   
+    display: block; 
+}
+.jsonOutput { 
+  
+    width: 50%;
+    float: left;
+}
+#responseTextArea {
+    width: 98%;
+    height: 500px;
+}
+h4 {
+    display: inline-block;
+}
+.imageDiv { 
+  
+    width: 50%;
+    float: left;
+}
+#sourceImage {
+    width:100%;
+    height:100%;
+    max-height:506px;
+    object-fit: contain;
+}
+.thumbnailDiv { 
+    background-color: #f0f0f0; 
+    width: 140px; 
+}
+.thumbnailImg {
+    width:100;
+    height:150;
+}
+.subKeyDiv {
+    margin-top: 4px; 
+    margin-bottom: 4px;
+}
+.pad {
+    width: 8px;
+    min-width: 8px;
+}
+
+ul { 
+    list-style-type: none; 
+    padding: 0; 
+    width: 200px; 
+}
+li a { 
+    display: block; 
+    color: #000000; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+}
+li a:hover { 
+    background-color: #000555; 
+    color: white;
+}

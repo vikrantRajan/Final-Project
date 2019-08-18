@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analyze</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page">
+    <div class="title"><h2>Final Project</h2></div>
+    <div class="container">
+       
+        <div class="userInterface">
+           <h3>Enter the URL to an image of an image you want to analyze, the click the <strong>Analyze image</strong> button.
+
+           </h3>
+           
+            <div class="subKeyDiv">
+                Subscription Key: 
+                <input 
+                    type="text" 
+                    class="subKeyInput" 
+                    name="subscriptionKeyInput" 
+                    id="subscriptionKeyInput" 
+                    onchange="common.subscriptionChange()" 
+                    value="da780c91a87a4b249b8f2ecfb599621b" readonly/>
+               
+                <select name="subscriptionRegionSelect" id="subscriptionRegionSelect" onchange="common.subscriptionChange()" hidden >
+                    <option value="westcentralus">westcentralus</option>
+                </select>
+            </div>
+            <br>
+            Image to analyze: <input type="text" name="inputImage" id="inputImage" value="Enter image URL here." />
+            <button onclick="analyzeButtonClick()">Analyze Image</button>
+            <br><br>
+            <div class="wrapper">
+                <div class="jsonOutput">
+                 <h1>Image Tags</h1>
+                    <br><br>
+                    <div id="responseTextArea" class="UIInput"></div>
+                </div>
+                <div class="pad"></div>
+                <div class="imageDiv">
+                        <h1>Source image</h1>
+                    <br>
+                    <span id="captionSpan"></span><br>
+                    <img id="sourceImage" onerror="common.imageLoadError()"/>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
